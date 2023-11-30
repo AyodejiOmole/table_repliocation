@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <>
             <div className="flex justify-between flex-row items-center shadow-lg p-3 w-full">
-                <h2>AyodejiOmole</h2>
+                <h2>Developer X.</h2>
 
                 <ul className="lg:flex md:flex justify-between hidden gap-4">
                     <li className="hover:underline cursor-pointer"><a href="#" className="hover:text-underline cursor-pointer">Uploads</a></li>
@@ -43,7 +43,7 @@ const Navbar = () => {
 
             {navOpen && 
                 <div className="absolute z-10 lg:hidden h-screen right-0 top-0 bottom-0 left-0 w-full overflow-y-hidden">
-                    <div className="w-1/2 bg-white h-full p-4">
+                    <div className="w-1/2 bg-white h-full py-4 px-2">
                         <p className="mb-10 font-semibold text-2xl cursor-pointer" onClick={() => setNavOpen(!navOpen)}>x</p>
                         <ul className="flex flex-col justify-between gap-4 items-center mb-4">
                             <li className="hover:underline cursor-pointer"><a href="#">Uploads</a></li>
@@ -55,13 +55,13 @@ const Navbar = () => {
                         <div className="flex flex-col justify-between items-center gap-5">
                             <span className="flex block space-between gap-1 cursor-pointer">
                                 <IoPersonCircleSharp size={30} />
-                                <p className="text-md text-gray-600 font-semibold">Andrea Antonescu</p>
+                                <p className="text-sm text-gray-600 font-semibold">Andrea Antonescu</p>
                                 <IoMdArrowDropdown className="my-auto"/>
                             </span>
                             
                             <div className="relative cursor-pointer flex justify-between ">
                                 <IoIosNotifications size={25}/>
-                                <div className="absolute bg-red-700 bottom-4 right-0 flex text-[10px] p-[1px] text-white items-center justify-center rounded-full">10</div>
+                                <div className="absolute bg-red-700 bottom-4 left-0 flex text-[10px] p-[1px] text-white items-center justify-center rounded-full">10</div>
                                 <p>Notifications</p>
                             </div>
 
@@ -74,7 +74,6 @@ const Navbar = () => {
                     </div>
                 </div>
             }
-            
         </>
     )
 }

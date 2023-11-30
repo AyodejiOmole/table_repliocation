@@ -5,7 +5,8 @@ import ReviewersBox from "./components/ReviewersBox";
 import { IoCheckmarkDone } from "react-icons/io5";
 import { RiEyeCloseLine } from "react-icons/ri";
 import Steering from "./components/Steering";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
+import { FaPlus } from "react-icons/fa6";
 
 function App() {
   const [tableDetails, setTableDetails] = useState(
@@ -17,7 +18,7 @@ function App() {
         Optimization: "ONLINE SALES FW23_8(ID:616)",
         Steering: "min",
         Rules: "4",
-        Configuration: "Lorem ipsum dolor",
+        Configuration: "Price Changes - S3",
         Reviewers: "Andrea Antonescu",
         Upload: "Nov 6, 2023, 10:38 am",
       },
@@ -71,7 +72,18 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="relative w-full p-3 mb-6 ">
+      <div className="relative w-full p-3 mb-6 mt-6">
+        <div className="flex justify-between w-full pb-10 border-b-2 border-blue-400 mb-10">
+          <div className="flex justify-between shadow-lg gap-2 items-center py-2 px-4 bg-blue-700 rounded-md cursor-pointer">
+            <FaPlus className="fill-white"/>
+            <p className="text-white text-sm">Create</p>
+          </div>
+
+          <div className="flex justify-center items-center bg-gray-300 cursor-pointer py-2 px-4 rounded-md border-b-2 border-gray-500">
+            Upload
+          </div>
+        </div>
+
         <div className="bg-transparent rounded-md shadow-lg overflow-x-auto">
           <table className="w-full">
             <thead className="">
