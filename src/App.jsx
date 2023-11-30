@@ -4,7 +4,8 @@ import { IoPencil } from "react-icons/io5";
 import ReviewersBox from "./components/ReviewersBox";
 import { IoCheckmarkDone } from "react-icons/io5";
 import { RiEyeCloseLine } from "react-icons/ri";
-import Steering from "./components/Steering"
+import Steering from "./components/Steering";
+import Navbar from "./components/Navbar"
 
 function App() {
   const [tableDetails, setTableDetails] = useState(
@@ -69,7 +70,8 @@ function App() {
 
   return (
     <>
-      <div className="relative w-full p-3 mb-6">
+      <Navbar />
+      <div className="relative w-full p-3 mb-6 ">
         <div className="bg-transparent rounded-md shadow-lg overflow-x-auto">
           <table className="w-full">
             <thead className="">
