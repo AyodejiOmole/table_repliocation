@@ -15,10 +15,6 @@ const Steering = ({ value }) => {
   )
 }
 
-// export const SteeringTwo = {{ value }} => {
-
-// };
-
 export default Steering;
 
 

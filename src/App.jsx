@@ -5,6 +5,7 @@ import ReviewersBox from "./components/ReviewersBox";
 import { IoCheckmarkDone } from "react-icons/io5";
 import { RiEyeCloseLine } from "react-icons/ri";
 import Steering from "./components/Steering";
+import Speedometer from "./components/Speedometer";
 import Navbar from "./components/Navbar";
 import { FaPlus } from "react-icons/fa6";
 
@@ -16,7 +17,7 @@ function App() {
         ID: "59",
         Start: "Nov 21, 2023, 10:38 am",
         Optimization: "ONLINE SALES FW23_8(ID:616)",
-        Steering: "min",
+        steering: 90,
         Rules: "4",
         Configuration: "Price Changes - S3",
         Reviewers: "Andrea Antonescu",
@@ -27,8 +28,8 @@ function App() {
         ID: "58",
         Start: "Nov 21, 2023, 10:38 am",
         Optimization: "ONLINE SALES FW23_8(ID:616)",
-        Steering: "max",
         Rules: "4",
+        steering: 10,
         Configuration: "Price Changes - S3",
         Reviewers: "Andrea Antonescu",
         Upload: "Nov 6, 2023, 2:53 pm",
@@ -38,8 +39,8 @@ function App() {
         ID: "58",
         Start: "Nov 21, 2023, 10:38 am",
         Optimization: "ONLINE SALES FW23_8(ID:616)",
-        Steering: "avg",
         Rules: "4",
+        steering: 80,
         Configuration: "Price Changes - S3",
         Reviewers: "Andrea Antonescu",
         Upload: "Nov 6, 2023, 2:53 pm",
@@ -49,8 +50,8 @@ function App() {
         ID: "58",
         Start: "Nov 21, 2023, 10:38 am",
         Optimization: "ONLINE SALES FW23_8(ID:616)",
-        Steering: "max",
         Rules: "4",
+        steering: 50,
         Configuration: "Price Changes - S3",
         Reviewers: "Andrea Antonescu",
         Upload: "Nov 6, 2023, 2:53 pm",
@@ -60,8 +61,8 @@ function App() {
         ID: "58",
         Start: "Nov 21, 2023, 10:38 am",
         Optimization: "ONLINE SALES FW23_8(ID:616)",
-        Steering: "min",
         Rules: "4",
+        steering: 30,
         Configuration: "Price Changes - S3",
         Reviewers: "Andrea Antonescu",
         Upload: "Nov 6, 2023, 2:53 pm",
@@ -111,7 +112,8 @@ function App() {
                     <td className="text-sm text-left whitespace-nowrap text-gray-500 px-3 py-5">{item.Start}</td>
                     <td className="text-sm text-left whitespace-nowrap text-gray-500 px-3 py-5">{item.Optimization}</td>
                     <td className="text-sm text-left whitespace-nowrap text-gray-500 px-3 py-5">
-                      <Steering value={item.Steering}/>
+                      {/* <Steering value={item.Steering}/> */}
+                      <Speedometer percentage={item.steering}/>
                     </td>
                     <td className="text-sm text-left whitespace-nowrap text-gray-500 px-3 py-5">{item.Rules}</td>
                     <td className="text-sm text-left whitespace-nowrap text-gray-500 px-3 py-5">{item.Configuration}</td>
