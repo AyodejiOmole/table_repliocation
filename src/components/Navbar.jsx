@@ -78,7 +78,7 @@ const Navbar = () => {
 
             <div className={`fixed z-50 h-screen lg:hidden bg-white top-0 right-0 w-full overflow-y-hidden transition-transform transform ${navOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className={`w-full bg-white h-full py-4 px-2`}>
-                    <p className="mb-10 font-semibold text-2xl cursor-pointer" onClick={() => setNavOpen(!navOpen)}>x</p>
+                    <p className="mb-10 text-right font-semibold text-2xl cursor-pointer" onClick={() => setNavOpen(!navOpen)}>x</p>
                     <ul className="flex flex-col justify-between gap-4 items-center mb-4">
                         <li className="hover:underline cursor-pointer"><a href="#">Uploads</a></li>
                         <li className="hover:underline cursor-pointer"><a href="#">Optimizations</a></li>
