@@ -9,14 +9,14 @@ const Speedometer = ({ percentage }) => {
     <div className="relative flex flex-col items-center justify-center whitespace-nowrap">
         <p className="text-xs">Max Profit</p>
         {/* Speedometer image */}
-        <img src={meter_two} alt="Speedometer" className="h-30 w-full p-0" />
+        <img src={meter_two} alt="Speedometer" className="h-30 w-24 p-0" />
 
         {/* Arrow */}
         <div
             className="absolute top-1/2 left-auto right-auto"
             style={{ transform: arrowRotation }}
         >
-            <BsArrowUp size={24}/>
+            <BsArrowUp className="w-6 h-6"/>
         </div>
         <div className="flex items-center gap-2 space-between">
             <p className="text-xs">Min</p>
